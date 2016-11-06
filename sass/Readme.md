@@ -49,18 +49,12 @@
     @import "modules/intro" 
 
 ## mixins
-    @mixin backImage($image,
-    $height: 100vh,
-    $bgPos: center center
-    ) {
-    background: linear-gradient( to bottom,
-        rgba(0,0,0,0),
-        rgba(0,0,0,.6)),
-        url($image);
-    background-repeat: no-repeat;
-    background-position: $bgPos;
-    background-size: cover;
-    height: $height;
+    @mixin backImage($image, $height: 100vh, $bgPos: center center ) {
+        background: linear-gradient( to bottom, rgba(0,0,0,0), rgba(0,0,0,.6)), url($image);
+        background-repeat: no-repeat;
+        background-position: $bgPos;
+        background-size: cover;
+        height: $height;
     }
 
     .jumbotron {
@@ -70,7 +64,7 @@
 
 ## Extend
 
-  -     .btn{}
+-       .btn{}
         .btn-reverse{ 
             @extend .btn; 
             background: red;
@@ -95,38 +89,38 @@
             background: $color-btn-default;
         }
 
-        It will exclude creating btn class
+        % exclude creating btn class
 
 ## Parent selector
 
 -       .item {
-            padding-bottom: 10px;
-            padding-top: 10px;
-            padding-left: 10px;
-            border-top: 1px dotted $color-item-border;
-            &:hover {
-                background: $yellow;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                border-top: 1px dotted $color-item-border;
+                &:hover {
+                    background: $yellow;
+                }
+                &:last-of-type {
+                    border-bottom: 1px dotted $color-item-border;
+                }
             }
-            &:last-of-type {
-                border-bottom: 1px dotted $color-item-border;
-            }
-        }
 
 -       .item {
-            padding-bottom: 10px;
-            padding-top: 10px;
-            padding-left: 10px;
-            border-top: 1px dotted $color-item-border;
-            &:hover {
-                background: $yellow;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                border-top: 1px dotted $color-item-border;
+                &:hover {
+                    background: $yellow;
+                }
+                &:last-of-type {
+                    border-bottom: 1px dotted $color-item-border;
+                }
+                #typography & {
+                    color: $red;
+                }
             }
-            &:last-of-type {
-                border-bottom: 1px dotted $color-item-border;
-            }
-            #typography & {
-                color: $red;
-            }
-        }
         Whenever the item class found in typography then it will change the color.
 
 -      Instead of adding clear to html whereever we want, we can simplay add to sass class wherever that class comes it will add the clear style. 
@@ -214,7 +208,7 @@
 
         } 
  
- -      @mixin break($length...){
+ -       @mixin break($length...){
             @if length($arg) == 1 {
                 @media (min-width: nth($length, 1)) {
                     @content;
