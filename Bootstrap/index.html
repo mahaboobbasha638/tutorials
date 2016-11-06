@@ -9,20 +9,397 @@
         <title>BootStrap</title>
     </head>
     <body>
-        <div class="container">
-            <h1>Welcome to your practice environment!</h1>
+        
+        <header class="bgimage">
+            <div class="container">
+                <h1>Headline</h1>
+            </div>
+        </header>
+        
+        <h1>Welcome to your practice environment!</h1>
+        <p>
+            The practice environment will load your course exercise files, accessible in the gray panel on the left.
+            All of these panels can be expanded, and the window is responsive – so you can focus on what matters most to you.
+        </p>
+        
+        <div class="container-fluid">
+            <h1>container-fluid</h1>
+            <p class="highlight">Always adjusts with width of the device.</p>
             <p>
                 The practice environment will load your course exercise files, accessible in the gray panel on the left.
                 All of these panels can be expanded, and the window is responsive – so you can focus on what matters most to you.
             </p>    
         </div>
         
-        <div class="container-fluid">
-            <h1>Welcome to your practice environment!</h1>
+        <div class="container">
+            <h1>container</h1>
+            <p class="highlight">Specific width size depending on the break point.</p>
             <p>
                 The practice environment will load your course exercise files, accessible in the gray panel on the left.
                 All of these panels can be expanded, and the window is responsive – so you can focus on what matters most to you.
             </p>    
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <h1>row</h1>
+                <p class="highlight">
+                    On adding row, it will get rid of container padding by adding negative margin.
+                </p>
+                <p>
+                    The practice environment will load your course exercise files, accessible in the gray panel on the left.
+                    All of these panels can be expanded, and the window is responsive – so you can focus on what matters most to you.
+                </p>   
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Column</h1>
+                    <p class="highlight">
+                        On adding column, at break point it will break the container into corresponding columns otherwise full width. Works in both containers.
+                    </p>
+                    <p>
+                        <span class="col-xs-12">- SIZE represents at which break points it has to devide into the columns</span>
+                        <span class="col-xs-12">- Extra Small .col-xs- width: auto; < 768px width </span>
+                        <span class="col-xs-12">- Small .col-sm- width: ~62px; >= 768px width </span>
+                        <span class="col-xs-12">- medium .col-md- width: ~81px; >= 992px width </span>
+                        <span class="col-xs-12">- Large .col-lg- width: ~97px; >= 1200px width </span>
+                    </p>       
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h1>Column 2</h1>
+                    <p class="highlight">
+                        It will adjust in Medium breakpoints.
+                    </p>
+                    <p>
+                        The practice environment will load your course exercise files, accessible in the gray panel on the left.
+                        All of these panels can be expanded, and the window is responsive – so you can focus on what matters most to you.
+                    </p>       
+                </div>
+                <div class="col-md-2">
+                    <h1>Column 2</h1>
+                    <p class="highlight">
+                        It will adjust in Medium breakpoints.
+                    </p>
+                    <p>
+                        The practice environment will load your course exercise files, accessible in the gray panel on the left.
+                        All of these panels can be expanded, and the window is responsive – so you can focus on what matters most to you.
+                    </p>       
+                </div>
+                <div class="col-md-2">
+                    <h1>Column 2</h1>
+                    <p class="highlight">
+                        It will adjust in Medium breakpoints.
+                    </p>
+                    <p>
+                        The practice environment will load your course exercise files, accessible in the gray panel on the left.
+                        All of these panels can be expanded, and the window is responsive – so you can focus on what matters most to you.
+                    </p>       
+                </div>
+                <div class="col-md-2">
+                    <h1>Column 2</h1>
+                    <p class="highlight">
+                        It will adjust in Medium breakpoints.
+                    </p>
+                    <p>
+                        The practice environment will load your course exercise files, accessible in the gray panel on the left.
+                        All of these panels can be expanded, and the window is responsive – so you can focus on what matters most to you.
+                    </p>       
+                </div>
+                <div class="col-md-2">
+                    <h1>Column 2</h1>
+                    <p class="highlight">
+                        It will adjust in Medium breakpoints.
+                    </p>
+                    <p>
+                        The practice environment will load your course exercise files, accessible in the gray panel on the left.
+                        All of these panels can be expanded, and the window is responsive – so you can focus on what matters most to you.
+                    </p>       
+                </div>
+                <div class="col-md-2">
+                    <h1>Column 2</h1>
+                    <p class="highlight">
+                        It will adjust in Medium breakpoints.
+                    </p>
+                    <p>
+                        The practice environment will load your course exercise files, accessible in the gray panel on the left.
+                        All of these panels can be expanded, and the window is responsive – so you can focus on what matters most to you.
+                    </p>       
+                </div>
+            </div>
+        </div>
+        
+        <div class="services container">
+            <h2>Columns: Adding breakpoints</h2>
+            <p class="highlight">
+                It will break as On SM into 2 columns, On MD into 3 columns, On LG into 6 columns
+            </p>
+            <div class="row">
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-exoticpets.svg" alt="Icon">
+                    <h3>Exotic Pets</h3>
+                    <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+                </section>
+            
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-grooming.svg" alt="Icon">
+                    <h3>Grooming</h3>
+                    <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+                </section>
+            
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-health.svg" alt="Icon">
+                    <h3>GeneralHealth</h3>
+                    <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+                </section>
+            
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-nutrition.svg" alt="Icon">
+                    <h3>Nutrition</h3>
+                    <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention.</p>
+                </section>
+            
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-pestcontrol.svg" alt="Icon">
+                    <h3>Pest Control</h3>
+                    <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.</p>
+                </section>
+            
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-vaccinations.svg" alt="Icon">
+                    <h3>Vaccinations</h3>
+                    <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets.</p>
+                </section>   
+            </div>  
+        </div>
+        
+        <div class="services container">
+            <h2>Columns: Fixing issues with heights of elements in diffente break points</h2>
+            <p class="highlight">
+                Adjusting elements when the elements doesn't have same height and floating randomly using clearfix and Responsive utility classes
+                like visible-sm-block, hidden-sm.
+            </p>
+            <div class="row">
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-health.svg" alt="Icon">
+                    <h3>General Health</h3>
+                    <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+                </section>
+                
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-exoticpets.svg" alt="Icon">
+                    <h3>Exotic Pets</h3>
+                    <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+                </section>
+            
+                <div class="clearfix visible-sm-block"></div>
+            
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-grooming.svg" alt="Icon">
+                    <h3>Grooming</h3>
+                    <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+                </section>
+            
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-nutrition.svg" alt="Icon">
+                    <h3>Nutrition</h3>
+                    <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention.</p>
+                </section>
+            
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-pestcontrol.svg" alt="Icon">
+                    <h3>Pest Control</h3>
+                    <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.</p>
+                </section>
+            
+                <section class="col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-vaccinations.svg" alt="Icon">
+                    <h3>Vaccinations</h3>
+                    <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets.</p>
+                </section>   
+            </div>  
+        </div>
+        
+        <div class="services container">
+            <h2>Offsetting Columns</h2>
+            <p class="highlight">
+                By adding the column offset like .col-xs-offset-3, .col-xs-6 we can keep in center on small screen, and need to clear by adding the
+                col-sm-offset-0 in the next break point.
+            </p>
+            <div class="row">
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-health.svg" alt="Icon">
+                    <h3>General Health</h3>
+                    <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+                </section>
+                
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-exoticpets.svg" alt="Icon">
+                    <h3>Exotic Pets</h3>
+                    <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+                </section>
+            
+                <div class="clearfix visible-sm-block"></div>
+            
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-grooming.svg" alt="Icon">
+                    <h3>Grooming</h3>
+                    <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+                </section>
+            
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-nutrition.svg" alt="Icon">
+                    <h3>Nutrition</h3>
+                    <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention.</p>
+                </section>
+            
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-pestcontrol.svg" alt="Icon">
+                    <h3>Pest Control</h3>
+                    <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.</p>
+                </section>
+            
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+                    <img class="icon" src="images/icon-vaccinations.svg" alt="Icon">
+                    <h3>Vaccinations</h3>
+                    <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets.</p>
+                </section>   
+            </div>  
+        </div>
+        
+        <div class="services container">
+            <h2>Nesting Columns</h2>
+            <p class="highlight">
+                We can add rows inside rows and can play with columns. Check on large break points it will work differently.
+            </p>
+            <div class="row nesting">
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-1 col-lg-offset-3">
+                            <img class="icon" src="images/icon-health.svg" alt="Icon">
+                        </div>
+                        <div class="col-lg-5">
+                            <h3>General Health</h3>
+                            <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-1 col-lg-offset-3">
+                            <img class="icon" src="images/icon-exoticpets.svg" alt="Icon">
+                        </div>
+                        <div class="col-lg-5">
+                            <h3>Exotic Pets</h3>
+                            <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+                        </div>
+                    </div>
+                </section>
+            
+                <div class="clearfix visible-sm-block"></div>
+            
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-1 col-lg-offset-3">
+                            <img class="icon" src="images/icon-grooming.svg" alt="Icon">
+                        </div>
+                        <div class="col-lg-5">
+                            <h3>Grooming</h3>
+                            <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-1 col-lg-offset-3">
+                            <img class="icon" src="images/icon-nutrition.svg" alt="Icon">
+                        </div>
+                        <div class="col-lg-5">
+                            <h3>Nutrition</h3>
+                            <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention.</p>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-1 col-lg-offset-3">
+                            <img class="icon" src="images/icon-pestcontrol.svg" alt="Icon">
+                        </div>
+                        <div class="col-lg-5">
+                            <h3>Pest Control</h3>
+                            <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.</p>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-1 col-lg-offset-3">
+                            <img class="icon" src="images/icon-vaccinations.svg" alt="Icon">
+                        </div>
+                        <div class="col-lg-5">
+                            <h3>Vaccinations</h3>
+                            <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets.</p>
+                        </div>
+                    </div>
+                </section>   
+            </div>  
+        </div>
+        
+        <div class="services container">
+            <h2>Customizing column order with push and pull</h2>
+            <p class="highlight">
+                By adding push and pull class we can reorder in that particular break points.
+            </p>
+            <div class="row">
+                <section class="col-xs-4 col-sm-push-8">
+                    <img class="icon" src="images/icon-health.svg" alt="Icon">
+                    <h3>General Health</h3>
+                    <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+                </section>
+                
+                <section class="col-xs-4">
+                    <img class="icon" src="images/icon-exoticpets.svg" alt="Icon">
+                    <h3>Exotic Pets</h3>
+                    <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+                </section>
+            
+                <div class="clearfix visible-xs-block hidden-xs"></div>
+            
+                <section class="col-xs-4 col-sm-pull-8">
+                    <img class="icon" src="images/icon-grooming.svg" alt="Icon">
+                    <h3>Grooming</h3>
+                    <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+                </section>
+            
+                <section class="col-xs-4">
+                    <img class="icon" src="images/icon-nutrition.svg" alt="Icon">
+                    <h3>Nutrition</h3>
+                    <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention.</p>
+                </section>
+            
+                <section class="col-xs-4">
+                    <img class="icon" src="images/icon-pestcontrol.svg" alt="Icon">
+                    <h3>Pest Control</h3>
+                    <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.</p>
+                </section>
+            
+                <section class="col-xs-4">
+                    <img class="icon" src="images/icon-vaccinations.svg" alt="Icon">
+                    <h3>Vaccinations</h3>
+                    <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets.</p>
+                </section>   
+            </div>  
         </div>
         
         <script src="js/jquery-3.1.1.min.js"></script>
