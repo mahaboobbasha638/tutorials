@@ -27,3 +27,23 @@
         text-align: left;
     }
 }
+
+.seperator{
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.h2-margin-top{
+    margin-bottom: 10px;
+}
+
+.h2-margin-top h2{
+    margin-top: 0;
+}
+
+.h2-margin-top p{
+    margin-bottom: 0;
+}
+
+.states h3{
+    margin-top: 0;
+}
