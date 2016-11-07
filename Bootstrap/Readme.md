@@ -140,7 +140,8 @@
 - Pre tag will keep the text as it is and keep into a block with proper border (to display java script code etc).
 - by adding pre-scrollable class it will prove scrollable box.
 
-# Bootstrap buttons
+# Other CSS Styles
+## buttons
 - btn class allows the add the buttons style
 - Default btn style calsses 
     - btn, btn-default
@@ -161,7 +162,7 @@
 - Button disabled class
     - disabled
 
-# Bootstrap Tables
+## Tables
 - "table" class will give proper style to table.
 - Class List
     - table-striped
@@ -177,14 +178,14 @@
 
 - By keeping the table inside container class "table-contanier" will make the table responsive.
 
-# Bootstrap Images
+## Images
 - By adding the "img-responsive" class image gets the resonsive style.
 - By adding "center-block" will make the image in the center of the column.
 - By adding "img-rounded" it added rounded edges.
 - By adding "img-circle" it will give circle images.
 - By adding "img-thumbnail" it will give circle images.
 
-# Bootstrap Helper classes
+## Helper classes
 - text-muted for light color
 - Can add contextual colors
     - text-primary
@@ -198,3 +199,127 @@
     - center-block
 - Can add show/hidden class to show and hide elements
 - Class "Invisible" will hide the image but it will take the corresponding space.
+
+## Responsive Utilities
+- We can controls the visibility of certain elements using utility classes at that break point
+    - VISIBILITY-SIZE(-DISPLAY)
+        - Visibility: visible or hidden
+        - Size: xs, sm, md, lg, print
+        - Display: block, inline, inline-block, print
+    - example
+        - visible-xs-block shows up element in xs breakpoint as block element
+        - hidden-xs hide the element in xs breakpoint
+        - Print element will appear when printing the element
+            - visible-print-block
+# Styling Forms
+## Basic Forms
+- "form-control" class will style the inputbox to width and proper padding
+- "form-group" class will create little bit of seperation between element 
+
+## Radio and Check boxes
+- Classes "radio", "checkbox" will give the proper alignemnts
+- Classes "radio-inline", "checkbox-inline" will display all the radio and checkbox elements in a line
+- disabled propery will disable the selection of the elements
+## Inline Forms
+- "form-inline" class dispaly form inline style but only in min width of 768px.
+## Horizontal Forms
+- Good for mobile user 
+- On desktop we can align in the center label and textbox next to eachother
+- On mobile label and textbox one after the Other
+- "form-horzontal" will solve that purpose
+## Validation Styles
+- We can show the validation state to the user
+    - has-warning
+
+            <div class="form-group has-warning">
+                <label for="inputName">Name</label>
+                <input class="form-control" type="text"
+                    id="inputName" placeholder="Your Name">
+            </div>
+
+    - has-error
+
+            <div class="form-group has-error">
+                <label for="inputName">Name</label>
+                <input class="form-control" type="text"
+                    id="inputName" placeholder="Your Name">
+            </div>
+
+    - has-success
+
+            <div class="form-group has-success">
+                <label for="inputName">Name</label>
+                <input class="form-control" type="text"
+                    id="inputName" placeholder="Your Name">
+            </div>
+
+- By adding the control-lable class will affect the same color style to corresponding label.
+
+            <div class="form-group has-success">
+                <label class="control-label" for="inputName">Name</label>
+                <input class="form-control" type="text"
+                    id="inputName" placeholder="Your Name">
+            </div>
+
+- We can show the icons as well along with this validation 
+- Bootstrap uses the glyphicons
+
+            <div class="form-group has-success has-feedback">
+                <label class="control-label" for="inputName">Name</label>
+                <input class="form-control" type="text"
+                    id="inputName" placeholder="Your Name">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+
+## Input groups
+- Allow to combine input field together with other elements
+- Like label and input filed combine to disaple each other combinedly
+    - Example 
+           
+            <div class="form-group">
+                <label for="inputName">Name</label>
+                <input class="form-control" type="text"
+                    id="inputName" placeholder="Your Name">
+            </div>
+
+    - Combining with addon
+
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input class="form-control" type="text"
+                    id="inputName" placeholder="Your Name">
+                </div>
+            </div>
+
+    - Combining with button
+
+            <div class="form-group">
+                <div class="input-group">
+                    <input class="form-control" type="text"
+                    id="inputName" placeholder="Enter search term">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </span>
+                </div>
+            </div>
+
+## Fieldset
+- Fieldset forms the groups
+- Can do group operations like complete fieldset elements can disable by addidng disable attribute.
+
+            <fieldset disable>
+                <input type="text">
+                <input type="button">
+                <input type="password">
+            </fieldset>
+
+- No need to add for each input box we can add only to fieldset
+
+## Icons
+- we can add icons from glyphicons
+    
+        <span class="glyphicon glyphicon-phone"></span>
+        <button type="button"><span class="glyphicon glyphicon-print"></span> Print</button>
+
+# Navigation Components
