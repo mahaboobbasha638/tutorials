@@ -840,4 +840,106 @@
                 </div>
             </div>
 
-- 
+## Collapsible Content 
+- By collapse class can handle the collapsible content.
+
+            <a href="#exoticpets" data-toggle="collapse" class="btn btn-primary">Exotic Pets</a>
+            <div class="collapse" id="exoticpets">
+                <p>Collapse content goes here.</p>
+            </div>
+
+            <div data-target="#exoticpets" data-toggle="collapse" class="btn btn-primary">Exotic Pets</div>
+            <div class="collapse" id="exoticpets">
+                <p>Collapse content goes here.</p>
+            </div>
+
+## Accordions
+- It will prepare proper collapasable panel with hadeaing and body
+
+            <div class="panel-group" id="accordion" >
+                <div class="panel panel-primary">
+                    <div class="panel-heading" id="headingone">
+                        <h4 class="panel-title">
+                            <a href="#exoticpets3" data-toggle="collapse" data-parent="accordion">Exotic Pets</a>
+                        </h4>
+                    </div>
+                    <div class="panel-collapse collapse in" id="exoticpets3">
+                        <div class="panel-body">
+                            <p>Accordiion panel body text goes here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+- By adding different panels in panel group and corresponding id will handle toggle among list.
+
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#exoticpets3" data-toggle="collapse" data-parent="#accordion">Exotic Pets</a>
+                        </h4>
+                    </div>
+                    <div class="panel-collapse collapse in" id="exoticpets3">
+                        <div class="panel-body">
+                            <p>Accordiion panel body text goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#exoticpets4" data-toggle="collapse" data-parent="#accordion">Exotic Pets</a>
+                        </h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="exoticpets4">
+                        <div class="panel-body">
+                            <p>Accordiion panel body text goes here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+## Tooltips
+- Tooltip class makes the proper style tooltips.
+
+        <p>Wisdom Pet
+            <a href="" data-toggle="tooltip" data-placement="top" title="Text for tooltip, text for tooltip.">Medicine</a>
+                strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and cures.
+        </p>
+
+- this won't initiate automatically. we need to add jquery script.
+
+         $('[data-toggle="tooltip"]').tooltip();    
+    
+## Popover
+- Unlike the tooltips these things need to click to show the text. 
+- this won't initiate automatically. we need to add jquery script.
+- Unlike tooltip attribute for you can have title for popover.
+
+        <button type="button" class="btn btn-info" 
+                data-container="body" data-toggle="popover" data-placement="top" data-title="Popover Title"
+                data-content="We offere text for popover, and it goes here.">
+            Popover
+        </button>
+
+        $('[data-toggle="popover"]').popover();   
+
+- By adding data-trigger:focus attribute popover will close on clicking outside.
+- But this won't work with button, need to add with ancor tag
+
+        <a class="btn btn-info" role="button" tabindex="0"
+                data-container="body" data-toggle="popover" data-placement="top" data-title="Popover Title"  data-trigger="focus"
+                data-content="We offere text for popover, and it goes here.">
+            Popover
+        </a>
+
+## Controlling Menus with scrollfix
+- By adding data-offset and data-spy can handle floating the navigation always on top.
+
+            <nav class="navbar navbar-default" data-spy="affix" data-offset="500">
+            </nav>
+
+- data-spy will hilightlate the element in the naviation on scrolling to that element.
+
+            <body data-spy="scroll" data-target=".navbar-default" data-offset="50">

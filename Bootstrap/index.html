@@ -2145,7 +2145,157 @@
                     </div>
                 </section>
             </div>
+            <h3>collapsible content</h3>
+            <div class="row">
+                <p class="highlight">
+                    By collapse class can handle the collapsible content.
+                </p>
+                <section class="col-sm-12">
+                    <a href="#exoticpets" data-toggle="collapse" class="btn btn-primary">Exotic Pets</a>
+                    <div class="collapse" id="exoticpets">
+                        <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and cures.</p>
+                    </div>
+                </section>
+                <p class="highlight">
+                    We can use data-target instead of ancor herf.
+                </p>
+                <section class="col-sm-12">
+                    <div data-target="#exoticpets1" data-toggle="collapse" class="btn btn-primary">Exotic Pets</div>
+                    <div class="collapse" id="exoticpets1">
+                        <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and cures.</p>
+                    </div>
+                </section>
+            </div>
+            <h3>Accordion</h3>
+            <div class="container">
+                <div clas="row">
+                    <p class="highlight">
+                        It will prepare proper collapasable panel with heading and body.
+                    </p>
+                    <section class="col-sm-12">
+                        <div class="panel-group" id="accordion1" >
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a href="#exoticpets6" data-toggle="collapse" data-parent="accordion1">Exotic Pets</a>
+                                    </h4>
+                                </div>
+                                <div class="panel-collapse collapse in" id="exoticpets6">
+                                    <div class="panel-body">
+                                        <p>Accordiion panel body text goes here.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-group" id="accordion2" >
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a href="#exoticpets7" data-toggle="collapse" data-parent="accordion2">Exotic Pets</a>
+                                    </h4>
+                                </div>
+                                <div class="panel-collapse collapse in" id="exoticpets7">
+                                    <div class="panel-body">
+                                        <p>Accordiion panel body text goes here.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="container">
+                <div clas="row">
+                    <p class="highlight">
+                        By adding different panels in panel group and corresponding id will handle toggle among list.
+                    </p>
+                    <section class="col-sm-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a href="#exoticpets3" data-toggle="collapse" data-parent="#accordion">Exotic Pets</a>
+                                    </h4>
+                                </div>
+                                <div class="panel-collapse collapse in" id="exoticpets3">
+                                    <div class="panel-body">
+                                        <p>Accordiion panel body text goes here.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a href="#exoticpets4" data-toggle="collapse" data-parent="#accordion">Exotic Pets</a>
+                                    </h4>
+                                </div>
+                                <div class="panel-collapse collapse" id="exoticpets4">
+                                    <div class="panel-body">
+                                        <p>Accordiion panel body text goes here.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <h3>ToolTips</h3>
+            <div class="row">
+                <p class="highlight">
+                    Tooltip class makes the proper style tooltips. <br>
+                    this won't initiate automatically. we need to add jquery script.
+                    <pre>
+                         $('[data-toggle="tooltip"]').tooltip();    
+                    </pre>
+                </p>
+                <section class="col-sm-12">
+                    <p>Wisdom Pet
+                    <a href="" data-toggle="tooltip" data-placement="top" title="Text for tooltip, text for tooltip.">Medicine</a>
+                     strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and cures.</p>
+                </section>
+            </div>
+            <h3>Popovers</h3>
+            <div class="row">
+                <p class="highlight">
+                    Unlike the tooltips these things need to click to show the text. <br>
+                    this won't initiate automatically. we need to add jquery script.
+                    <pre>
+                         $('[data-toggle="popover"]').popover();    
+                    </pre>
+                </p>
+                <section class="col-sm-12">
+                    <button type="button" class="btn btn-info" 
+                            data-container="body" data-toggle="popover" data-placement="top" data-title="Popover Title" 
+                            data-content="We offere text for popover, and it goes here.">
+                        Popover
+                    </button>
+                </section>
+                <p class="highlight">
+                    By adding data-trigger:focus attribute popover will close on clicking outside.<br>
+                    But this won't work with button, need to add with ancor tag.
+                </p>
+                <section class="col-sm-12">
+                    
+                    <a class="btn btn-info" role="button" tabindex="0"
+                            data-container="body" data-toggle="popover" data-placement="top" data-title="Popover Title"  data-trigger="focus"
+                            data-content="We offere text for popover, and it goes here.">
+                        Popover
+                    </a>
+                </section>
+                
+            </div>
+            <h3>Controlling Menus with Scrollfix</h3>
+            <p class="highlight">
+                By adding data-offset and data-spy can handle floating the navigation always on top.
+            </p>
+            <header>
+                <pre>
+                    <nav class="navbar navbar-default" data-spy="affix" data-offset="500">
+                    </nav>
+                </pre>
+            </header>
         </div>
+        
         
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
