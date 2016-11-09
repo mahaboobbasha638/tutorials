@@ -645,3 +645,199 @@
                 </ol>
             </nav>
 
+# Media Components
+## Jumbotrons
+- Class "jumbotron" makes the element to diplay in gray box and adds padding.
+
+            <div class="jumbotron">
+                <h2>Our Mission</h2>
+            </div>
+
+## Labels and badges
+- Lables and badges usufull css components where you want to pass certain information to user.
+
+           <h3>Exotic Pets
+                <label class="label label-primary">new</label>
+            </h3>
+            <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+            <a href="">read articles <span class="badge">4</span></a>
+
+## Thumbnails
+- By thumbnail class it will dispaly image in thumbnail along with caption.
+
+            <a href="" class="thumbnail">
+                <img class="icon" src="images/drwinthrop.jpg" alt="Icon">
+                <div class="caption">
+                    cpation caption caption 
+                </div>
+            </a>
+
+## Media
+- Media, media-left, media-body classe will play role to align media and text propelry.
+
+            <div class="media">
+                <div class="media-left">
+                    <a href="" class="media-object">
+                        <img class="icon" src="images/drwinthrop.jpg" alt="Icon">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h3 class="media-heading">Exotic Pets</h3>
+                    <p> this is description , this is description , this is description , this is description , this is description.</p>
+                </div>
+            </div>
+
+## Video with responsive embeds
+- Can use repsonsive class like embed-responsive to align video properly.
+
+            <div class="col-xs-6 col-sm-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <video class="embed-responsive-item" src="videos/brushing.mp4"
+                        autoplay controls muted></video>    
+                </div>
+            </div>
+
+- We can use with any video element like youtube embed lik as well.
+
+# Content container
+## list groups
+- convert into standard list group
+    
+            <div class="list-groups">
+                <li class="list-group-item">Cally Reynolds</li>
+                <li class="list-group-item">Sydney Bartlett</li>
+                <li class="list-group-item">Hunter Newton</li>
+            </div>
+
+## panels
+- can do proper panalising data like header, body and footer.
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Title</h3>
+                </div>
+                <div class="panel-body">
+                    <p>It's panel-default here</p>
+                </div>
+                <div class="panel-footer">
+                    &raquo; <a href="">get appointment</a>
+                </div>
+            </div>
+
+## well
+- it also give poper indentation and border along the background color
+
+            <div class="well well-lg">
+                It's panel-default here, and then we just put our content in there and you're going to need to divide the content into different parts so you can have a div with a class of panel-body, and if you want to, you can paste your content in there
+            </div>
+
+
+# Javascript components
+## Carousel
+- Carousel will take list of images and show them as presenation like slide show etc.
+
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/carousel-lifestyle.jpg" alt="Lifestyle Photo">
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel-mission.jpg" alt="Mission">
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel-vaccinations.jpg" alt="Vaccinations">
+                    </div>
+                </div>
+            </div>
+
+- By default whatever the item has active class it will show up like above.
+- By adding attribute data-ride="carousel"it will do presentation of all.
+- Presentation we can control using classe slide to make slider.
+- By adding carousel-cpation can have caption for each image.
+
+            <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/carousel-lifestyle.jpg" alt="Lifestyle Photo">
+                        <div class="carousel-caption">
+                            <h3>Headline</h3>
+                            <p>Dummy text dummy text dummy text.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel-mission.jpg" alt="Mission">
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel-vaccinations.jpg" alt="Vaccinations">
+                    </div>
+                </div>
+            </div>
+
+- By adding carousel-control elements we can have carousel navigation.
+
+            <div class="carousel slide" id="featured">
+                <ol class="carousel-indicators">
+                    <li data-target="#featured" data-slide-to="0" class="active"></li>
+                    <li data-target="#featured" data-slide-to="1"></li>
+                    <li data-target="#featured" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/carousel-lifestyle.jpg" alt="Lifestyle Photo">
+                        <div class="carousel-caption">
+                            <h3>Headline</h3>
+                            <p>Dummy text dummy text dummy text.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel-mission.jpg" alt="Mission">
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel-vaccinations.jpg" alt="Vaccinations">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control"  href="#featured" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
+- We can control carousel with jquery script.
+
+            $(".carousel").carousel();
+            $(".carousel").carousel({
+                interval: 2000, //false for no intrevel
+                pause: false, //for hover pass carousel
+                wrap: false, //after last it will stop
+                keyboard: false //to prevent keyboard control
+            });
+
+## tabs
+- Controlling tab with javascript.
+
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active" >
+                    <a href="#tab1" data-toggle="tab">Tab1</a>
+                </li>
+                <li role="presentation">
+                    <a href="#tab2" data-toggle="tab">Tab2</a>
+                </li>
+                <li role="presentation">
+                    <a href="#tab3" data-toggle="tab">Tab3</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="tab1">
+                    tab content 1
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tab2">
+                    tab content 2
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tab3">
+                    tab content 3
+                </div>
+            </div>
+
+- 
